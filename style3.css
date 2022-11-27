@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  white;
+    color: #1d1f1d;
+    font-family: sans-serif;
+    overflow:hidden ;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 7rem;
+  background: #333;
+  width: 100%;
+}
+
+header .logo {
+  color: #3ab1c1;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  float: left;
+  margin-top: 0.5rem;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li a{
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0.25rem;
+}
+
+header nav ul li a{
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0.25rem;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+  color: #fff;
+  background: #3ab1c1;
+}
+
+
+.navbar-toggle {
+  color: #fff;
+  float: right;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.about-section{
+    background: url(images/icc.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    box-shadow: #1d1f1d;
+  }
+  
+  .inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+    box-shadow: #1d1f1d;
+  }
+  
+  .inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  
+  .skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  
+  @media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+  }
+  
+  @media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+  }
+  
+  @media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+  }
+  
+  @media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+  }
+  

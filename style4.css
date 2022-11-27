@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 7rem;
+  background: #333;
+  width: 100%;
+}
+
+header .logo {
+  color: #3ab1c1;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  float: left;
+  margin-top: 0.5rem;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li a{
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0.25rem;
+}
+
+header nav ul li a{
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0.25rem;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+  color: #fff;
+  background: #3ab1c1;
+}
+
+
+.navbar-toggle {
+  color: #fff;
+  float: right;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+section {
+  position: relative;
+  z-index: 3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 800px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-header h2 {
+  color: #333;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  color: #333;
+}
+
+.row  {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-info-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact-info-icon {
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.contact-info-icon i {
+  font-size: 30px;
+  line-height: 70px;
+}
+
+.contact-info-content {
+  margin-left: 20px;
+}
+
+.contact-info-content h4 {
+  color: #1da9c0;
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.contact-info-content p {
+  color: #333;
+  font-size: 1em;
+}

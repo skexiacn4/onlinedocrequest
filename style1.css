@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  white;
+    color: #1d1f1d;
+    font-family: sans-serif;
+    overflow:hidden ;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 7rem;
+  background: #333;
+  width: 100%;
+}
+
+header .logo {
+  color: #3ab1c1;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  float: left;
+  margin-top: 0.5rem;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li a{
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0.25rem;
+}
+
+header nav ul li a{
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0.25rem;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+  color: #fff;
+  background: #3ab1c1;
+}
+
+
+.navbar-toggle {
+  color: #fff;
+  float: right;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.text-box{
+  width: 90%;
+  color: #1d1f1d;
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  font-family: system-ui;
+}
+
+
+.text-box h1{
+  font-size: 62px;
+}
+
+
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #1d1f1d;
+}
+
+
+@media(max-width: 991px){
+   header {
+    padding: 0 1.5rem;
+   }
+   header .logo {
+    margin-top: 0;
+   }
+   .navbar-toggle {
+    display: block;
+   }
+   header nav {
+    position: absolute;
+    top: 50px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #333;
+    transition: right 0.5s;
+    overflow: hidden;
+   }
+   header nav.active{
+    right: 0;
+   }
+   header nav ul {
+    display: block;
+    text-align: center;
+   }
+
+   header nav ul li a{
+    border-bottom: 1px dotted rgba(58, 177, 193, 0.5)
+   }
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #009dff  ;
+    padding: 10px 25px;
+    font-size: 13px;
+    background:#009dff ;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0px rgb(0,0,0,.2);
+    margin: 30px 10px 0 0;
+ }
+
+ .hero-btn:hover {
+    background: #009dff;
+    transform: scale(1.1);
+    transition: 0.3s;
+ }
+
+
+    
+::selection{
+    background: #38b0de;
+  }
+  .container{
+
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+  }
+  .wrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+  }
+  .wrapper .title{
+    height: 90px;
+    background: #38b0de;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper form{
+    padding: 30px 25px 25px 25px;
+  }
+  .wrapper form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .wrapper form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  form .row input:focus{
+    border-color: #38b0de;
+    box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+  }
+  form .row input::placeholder{
+    color: #999;
+  }
+  .wrapper form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #38b0de;
+    border: 1px solid #38b0de;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper form .pass{
+    margin: -8px 0 20px 0;
+  }
+  .wrapper form .pass a{
+    color: #38b0de;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .wrapper form .pass a:hover{
+    text-decoration: underline;
+  }
+  .wrapper form .button input{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #38b0de;
+    border: 1px solid #38b0de;
+    cursor: pointer;
+  }
+  form .button input:hover{
+    background: #12876f;
+  }
+  .wrapper form .signup-link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .wrapper form .signup-link a{
+    color: #38b0de;
+    text-decoration: none;
+  }
+  form .signup-link a:hover{
+    text-decoration: underline;
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    .container{
+      position: absolute;
+      top: 50%;
+       right: 20%;
+       transform: translateY(-50%);
+      }
+      
+    .text-box {
+      display:none ;
+    }
+  }
+
+  
